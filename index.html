@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Music Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+
+<body>
+    <header>
+        <h1 class="heading">My Music Website</h1>
+    </header>
+
+    <main>
+        <div class="background">
+            <div class="musicplayer" id="music-player">
+                <h2 id="song-title"> Title</h2>
+                <h3 id="song-artist">Artist </h3>
+                <img src="product1.jpg">
+                <audio id="audio-player" src="music/One-Direction-Night-Changes.mp3"></audio>
+            </div>
+            <div id="song-slider-container">
+                <input type="range" id="song-slider" min="0" value="0">
+                <span id="current-time">0:00</span> / <span id="total-time">0:00</span>
+            </div>
+            <div id="control-buttons">
+                <button class="buttons" id="prev-btn"><span class="material-icons">skip_previous</span></button>
+                <button class="buttons" id="play-pause-btn"><span class="material-icons">play_arrow</span></button>
+                <button class="buttons" id="next-btn"><span class="material-icons">skip_next</span></button>
+            </div>
+        
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 My Music Website. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
